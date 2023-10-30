@@ -1,19 +1,19 @@
 // Desafio - JavaScript: Desafio Portaria
 
 // Solicita ao usuário que digite seu nome
-let nome = prompt('Digite seu nome')
+const nome = prompt('Digite seu nome')
 
 // Solicita ao usuário que digite sua idade e converte para um número
-let idade = Number(prompt('Digite sua idade'))
+const idade = Number(prompt('Digite sua idade'))
 
 // Solicita ao usuário que indique se está acompanhado ('s' para sim, 'n' para não)
-let estaAcompanhado = prompt('Você está acompanhado? Digite "s" para sim e "n" para não')
+const estaAcompanhado = prompt('Você está acompanhado? Digite "s" para sim e "n" para não')
 
 // Converte a resposta do usuário para letras minúsculas e verifica se é 's' (indicando sim)
 // Se for, atribui true a estaAcompanhado, caso contrário, atribui false
 if (estaAcompanhado.toLowerCase() == 's'){
     estaAcompanhado = true
-} else {
+} else if (estaAcompanhado.toLowerCase() == 'n') {
     estaAcompanhado = false
 }
 
